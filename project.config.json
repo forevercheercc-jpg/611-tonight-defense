@@ -1,0 +1,6 @@
+{
+  "description": "611 今晚守家 · 原创合作小游戏原型",
+  "compileType": "game", "miniprogramRoot": "minigame/",
+  "appid": "touristappid", "projectname": "611-defenders",
+  "setting": { "es6": true, "minified": false }, "libVersion": "latest"
+}
