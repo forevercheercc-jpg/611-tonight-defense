@@ -1,0 +1,28 @@
+Fusion Pixel Font 12px Monospaced, Simplified Chinese
+
+Project
+https://github.com/TakWolf/fusion-pixel-font
+
+Official release
+2026.10.25
+https://github.com/TakWolf/fusion-pixel-font/releases/tag/2026.10.25
+
+Downloaded release asset
+https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.10.25/fusion-pixel-font-12px-monospaced-otf.woff2-v2026.10.25.zip
+
+Original file in the release archive
+fusion-pixel-12px-monospaced-zh_hans.otf.woff2
+
+Local file
+pixel-cn.woff2
+This is the complete, unmodified Simplified Chinese font from the official
+archive. Only its filename has changed. File size is 684752 bytes.
+
+License
+SIL Open Font License 1.1. See OFL.txt and the complete upstream attribution
+and license texts in LICENSES/. These files were copied unmodified from
+the same official release archive.
+
+Usage
+Define a local CSS font family such as FusionPixel. Use 12px, 24px, or
+another integer multiple of 12px for crisp native pixel letterforms.

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>611 今晚守家 · 像素 UI 原型</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="studio">
+    <header class="masthead">
+      <a class="brand" href="#battle" aria-label="611 今晚守家原型首页"><span class="brand-mark">611</span><span>今晚守家<small>PIXEL INTERFACE STUDY</small></span></a>
+      <span class="version"><i></i> 可交互设计原型 <b>V.01</b></span>
+    </header>
+    <main class="workspace">
+      <aside class="sidebar">
+        <p class="eyebrow">旧室友，新一局。</p>
+        <h1>今晚，<br>一起守 <em>611</em>。</h1>
+        <p class="lead">三条防线，一起回高地。<br>为手机合作守城打造的像素界面。</p>
+        <nav class="scenes" aria-label="原型场景">
+          <button data-scene="battle" aria-pressed="true"><span class="scene-index">01</span><span>三路守城<small>近战前冲 · 独立受击反馈</small></span><b>↗</b></button>
+          <button data-scene="prepare" aria-pressed="false"><span class="scene-index">02</span><span>波间备战<small>买伙伴 · 自动合成 · 调整站位</small></span><b>↗</b></button>
+          <button data-scene="synergy" aria-pressed="false"><span class="scene-index">03</span><span>英雄与羁绊<small>看技能 · 查阵容 · 找下一张</small></span><b>↗</b></button>
+          <button data-scene="boss" aria-pressed="false"><span class="scene-index">04</span><span>高地首领战<small>危险预警 · 读条打断</small></span><b>↗</b></button>
+          <button data-scene="heroes" aria-pressed="false"><span class="scene-index">05</span><span>像素英雄图鉴<small>体型 · 武器 · 职业辨识度</small></span><b>↗</b></button>
+        </nav>
+        <div class="swatches" aria-label="视觉配色"><span style="--swatch:#273c50"></span><span style="--swatch:#58758b"></span><span style="--swatch:#efc986"></span><span style="--swatch:#80d9bb"></span><span style="--swatch:#f08b81"></span><label>夜蓝石墙 / 暖灯 / 青绿</label></div>
+        <p class="prototype-note">此处展示拟议界面与演出，室友消息为演示数据。联机战斗仍需接入。</p>
+      </aside>
+      <section class="preview-column" aria-label="手机原型">
+        <div class="preview-heading"><span><i class="live-dot"></i> <b id="scene-label">三路守城</b></span><span>390 × 844 · 竖屏</span></div>
+        <div class="phone-shell">
+          <canvas id="game" width="780" height="1688" role="img" aria-label="611竖屏游戏原型，操作按钮列于下方"></canvas>
+          <div id="hotspots" class="hotspots" aria-label="游戏操作"></div>
+        </div>
+        <p class="preview-caption" id="scene-caption">点击路线放大观察，点击伙伴查看技能。英雄会自动出招。</p>
+      </section>
+      <aside class="inspector">
+        <div class="inspector-heading"><span class="eyebrow">战斗演出</span><span class="demo-tag">演示控制</span></div>
+        <h2 id="demo-title">每一下，都看得见。</h2>
+        <p id="demo-description">前冲、挥砍、命中停顿、碎片与击退，组成一次完整攻击。下方按钮只用于预览效果。</p>
+        <div class="effects" aria-label="特效演示">
+          <button data-effect="slash"><span>劈砍</span><small>前冲 + 刀光 + 命中</small></button>
+          <button data-effect="spin"><span>反击螺旋</span><small>受击蓄力 + 环形反击</small></button>
+          <button data-effect="lightning"><span>一杖断灯</span><small>跳跃闪电 + 局部压暗</small></button>
+          <button data-effect="heal"><span>治疗</span><small>绿色脉冲 + 血条回升</small></button>
+        </div>
+        <div class="playback"><button id="pause" type="button" aria-pressed="false">暂停演出</button><button id="sound" type="button" aria-pressed="false">音效关</button><button id="motion" type="button" aria-pressed="false">减弱震动</button></div>
+        <div class="notes"><h3 id="note-title">战场先于面板</h3><p id="note-content">自己的路线更宽，其他两路始终在场。青绿代表友军，红色代表危险，黄色只用于金币、升星和关键机会。</p></div>
+        <div class="keyboard-hint"><span>操作提示</span><p id="interaction-hint">点三路标题切换观察。英雄头顶短条为生命，脚下短条为技能进度。</p></div>
+      </aside>
+    </main>
+    <footer class="studio-footer"><span>611 · ORIGINAL PIXEL DRAWING</span><span>英雄轮廓参考多多自走棋 · 自绘像素实现</span></footer>
+    <div id="announcement" class="sr-only" aria-live="polite"></div>
+  </div>
+  <script src="game-content.js"></script>
+  <script src="pixel-art.js"></script>
+  <script src="hero-pixels.js"></script>
+  <script src="prototype.js"></script>
+</body>
+</html>

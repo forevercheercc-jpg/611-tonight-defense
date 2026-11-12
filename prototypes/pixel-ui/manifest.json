@@ -1,0 +1,20 @@
+{
+  "name": "611 今晚守家 · 像素 UI 原型",
+  "type": "local-interactive-canvas-prototype",
+  "entry": "index.html",
+  "baseViewport": {"width": 390, "height": 844},
+  "renderer": "prototype.js",
+  "design": "DESIGN.md",
+  "sourceGame": "../../minigame/lane-core.js",
+  "multiplayer": "not-connected",
+  "pages": [
+    {"id": "battle", "hash": "#battle", "image": "battle.png"},
+    {"id": "prepare", "hash": "#prepare", "image": "prepare.png"},
+    {"id": "synergy", "hash": "#synergy", "image": "synergy.png"},
+    {"id": "boss", "hash": "#boss", "image": "boss.png"},
+    {"id": "heroes", "hash": "#heroes", "image": "heroes.png"}
+  ],
+  "overlays": ["hero", "equipment", "routes"],
+  "art": ["pixel-art.js", "hero-pixels.js"],
+  "fontLicense": "fonts/OFL.txt"
+}
